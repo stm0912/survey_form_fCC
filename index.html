@@ -13,22 +13,23 @@
     <div class="testing2">
       <div>
       
-      <label id="name-label" for="name">Name:</label>
+      <p id="name-label" for="name">Name:</p>
       <input type="text" id="name" placeholder="Enter your name" required></input>
-      </div>
-      <div>
+      
+      
 
-      <label id="email-label" for="email">Email:</label>
+      <p id="email-label" for="email">Email:</p>
       <input type="email" id="email" placeholder="Enter your email" required></input>
-      </div>
-      <div>
+      
+      
 
-      <label id="number-label" for="number">Age (optional):</label>
+      <p id="number-label" for="number">Age (optional):</p>
       <input type="number" id="number" min="13" max="100" placeholder="Age"></input>
-      </div>
+      
     </div>
+    <div>
 
-      <p>Which option best describes your current role?</p>
+      <p class="current_role">Which option best describes your current role?</p>
         <select id="role-dropdown">
           
 <option disabled selected>Select current role</option>
@@ -42,23 +43,23 @@
           
         </select>
       
-
+    </div>
       
+      <div>
+
+      <p class="p">Would you recommend freeCodeCamp to a friend?</p>
+
+      <label class="radioLabel" for="wouldRecommend" class="try"><input type="radio" class="radios" id="wouldRecommend" name="would-recommend" value="definitely">Definitely</label>
+
+      <label class="radioLabel" for="maybeRecommend" class="try"><input type="radio" class="radios" id="maybeRecommend" name="would-recommend" value="maybe">Maybe</label>
+
+      <label class="radioLabel" for="unsure" class="try"><input type="radio" class="radios" id="unsure" name="would-recommend" value="notSure">Not Sure</label>
       
+    </div>
 
-      <p>Would you recommend freeCodeCamp to a friend?</p>
+      <div>
 
-      <label for="wouldRecommend"><input type="radio" id="wouldRecommend" name="would-recommend" value="definitely">Definitely</label>
-
-       <label for="maybeRecommend"><input type="radio" id="maybeRecommend" name="would-recommend" value="maybe">Maybe</label>
-
-      <label for="unsure"><input type="radio" id="unsure" name="would-recommend" value="notSure">Not Sure</label>
-      
-      
-
-      
-
-<p>What is your favorite feature of freeCodeCamp?</p>
+<p class="p">What is your favorite feature of freeCodeCamp?</p>
 
 <select>
 
@@ -71,40 +72,43 @@
 
   </select>
 
+</div>  
       
-      
-
-  <p>What would you like to see improved?</p>
-
 <div>
-<input type="checkbox" id="front-end-projects" value="vid-check">
+  <p class="p">What would you like to see improved?</p>
+
+
+<input type="checkbox" class="checkboxes" id="front-end-projects" value="vid-check">
 
 <label for="front-end-projects">Front-End Projects</label>
 </div>
 
 <div>
-<input type="checkbox" id="back-end projects" value="vid-check">
+<input type="checkbox" class="checkboxes" id="back-end projects" value="vid-check">
 
 <label for="back-end projects">Back-End Projects</label>
 
 </div>
 
 <div>
-  <input type="checkbox" id="videos" value="vid-check">
+  <input type="checkbox" class="checkboxes" id="videos" value="vid-check">
 <label for="videos">Videos</label>
  </div> 
 
 <div>
-  <input type="checkbox" id="city-meetups" value="meet-check">
+  <input type="checkbox" class="checkboxes" id="city-meetups" value="meet-check">
 <label for="city-meetups">City Meetups</label>
      
-</div>     
-  <input type="checkbox" id="challenges" value="chall-check"> 
+</div>    
+
+<div>
+  <input type="checkbox" class="checkboxes" id="challenges" value="chall-check"> 
   <label for="challenges">Challenges</label>
-          
+</div>     
         
         
-        <label>Any comments or suggestions?<textarea placeholder="Enter your comment here..."></textarea>
+        <p class="p">Any comments or suggestions?</p>
+        <textarea placeholder="Enter your comment here..."></textarea>
         <input type="submit" id="submit">
         
     </form>
